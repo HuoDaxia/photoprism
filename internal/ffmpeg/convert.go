@@ -67,6 +67,7 @@ func AvcConvertCommand(fileName, avcName string, opt Options) (result *exec.Cmd,
 			"-f", "mp4",
 			"-movflags", "+faststart", // puts headers at the beginning for faster streaming
 			"-y",
+			"-noautorotate",
 			avcName,
 		)
 
